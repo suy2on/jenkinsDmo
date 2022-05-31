@@ -9,13 +9,18 @@ pipeline {
         }
         stage('Test') {
             steps {
-                build 'MavenDemo'
+                build 'SeleniumMaven'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
             }
+        }
+    }
+    post {
+        always{
+            echo 'pipeline done'
         }
     }
 }
