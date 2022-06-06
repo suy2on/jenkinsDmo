@@ -17,7 +17,7 @@ pipeline {
                 }                
             } 
         }
-        stage('Print Time') {
+        stage('Print DateTime') {
             steps {
                   // Prepare Today Date 에서 구한 today 날짜 를 출력한다.
                   echo today
