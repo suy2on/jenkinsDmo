@@ -5,7 +5,7 @@ pipeline {
     }
     
     stages {
-        stage('Today Date') {
+        stage('Today DateTime') {
             steps {
                  // java 라이브러리를 이용하여 날짜를 구한다 
                  script {
